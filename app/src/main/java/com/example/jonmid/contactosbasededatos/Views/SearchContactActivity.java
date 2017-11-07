@@ -85,7 +85,7 @@ public class SearchContactActivity extends AppCompatActivity {
         db.execSQL("update users set  name = "+"'"+ editTextName.getText()+"'"+ ", phone = "+ "'" +editTextPhone.getText()+"'"+ ", email = "+"'"+ editTextEmail.getText()+"'"+"where id = "+ IdContact);
 
 
-        Toast.makeText(this, "Contacto eliminado correctamente", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Contacto Actualizado correctamente", Toast.LENGTH_SHORT).show();
         onClickCancelDelete(view);
 
     }
