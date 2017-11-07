@@ -86,6 +86,7 @@ public class SearchContactActivity extends AppCompatActivity {
 
 
         Toast.makeText(this, "Contacto Actualizado correctamente", Toast.LENGTH_SHORT).show();
+
         onClickCancelDelete(view);
 
     }
