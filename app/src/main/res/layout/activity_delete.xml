@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonmid.contactosbasededatos.Views.DeleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Esta seguro de eliminar este contacto?"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="50dp"/>
+        <TextView
+            android:id="@+id/id_tv_delete_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/id_tv_delete_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nombre"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/id_tv_delete_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="telefono"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/id_tv_delete_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar contacto"
+            android:layout_marginTop="50dp"
+            android:theme="@style/RaisedButtonDark"
+            android:onClick="onClickDeleteContact"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cancelar"
+            android:theme="@style/RaisedButtonDark"
+            android:onClick="onClickCancelDelete"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
